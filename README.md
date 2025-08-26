@@ -57,7 +57,7 @@ pip install -r Requirements.txt --extra-index-url https://download.pytorch.org/w
 ```
 ## Check
 	import torch
-   	print(torch.cuda.is_available())  # → True, якщо GPU активний
+   	print(torch.cuda.is_available())  # → True, if GPU active
 
 # Mac (M1+)
 1. Python v10.0
@@ -67,7 +67,7 @@ pip install -r Requirements.txt --extra-index-url https://download.pytorch.org/w
 	pip install torch torchvision torchaudio
 ### Check
     	import torch
-		print(torch.backends.mps.is_available())  # → Should be: True
+		print(torch.backends.mps.is_available())  # → True, if GPU active
 ### Use
        Automatically	
 ## 4. Tensorflow
