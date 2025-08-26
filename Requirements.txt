@@ -1,0 +1,22 @@
+# Data
+numpy==1.24.3
+pandas==2.3.0
+scipy==1.15.3
+scikit-learn==1.7.0
+statsmodels==0.14.5
+
+# ML/DL
+torch==2.7.1+cu118
+torchvision==0.22.1+cu118
+torchaudio==2.7.1+cu118
+tensorflow==2.10.1
+keras==2.10.0
+tensorboard==2.10.1
+tensorboard-data-server==0.6.1
+tensorboard-plugin-wit==1.8.1
+tensorflow-estimator==2.10.0
+
+# Jupyter
+jupyter
+ipykernel==6.29.5
+ipywidgets==8.1.7
