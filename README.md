@@ -1,4 +1,4 @@
-GPU using
+<img width="1280" height="586" alt="image" src="https://github.com/user-attachments/assets/186f5a1f-65c2-49b2-b46a-1984bc942bbc" />GPU using
 Windows
 1. a. Install Python 10.0, don't forget to add to the Path via installing
 1. b. If you have another version, install Python 10.0, or if you don't want to install this version of Python, please download zip version of Python and unpack it wherever you want
@@ -13,13 +13,32 @@ Windows
 Mac (M1+)
 1. Python v10.0
 2. Create an environment
-
-PyTorch
+3. PyTorch
+ 	1. Install
 	pip install torch torchvision torchaudio
- 	import torch
-	print(torch.backends.mps.is_available())  # → True, якщо Metal доступний
+	2. Check
+    	import torch
+		print(torch.backends.mps.is_available())  # → Should be: True
+    4. Use
+       Automatically 
 	
-4.
-	conda install -c apple tensorflow-deps
-pip install tensorflow-macos
-pip install tensorflow-metal 
+5. Tensorflow
+ 	1. Install
+		conda install -c apple tensorflow-deps
+		pip install tensorflow-macos
+		pip install tensorflow-metal
+	2. Check
+    	import tensorflow as tf
+		print(tf.config.list_physical_devices('GPU'))
+    4. Use
+		with tf.device('/GPU:0') for using GPU
+
+  	Example:
+   		def process_images(
+			#your code
+   )
+   		for phase in phases:
+   			with tf.device('/GPU:0')
+   				processed = process_images(dict[phase][0])
+   			print(f"Processing of phase{phase} completed")
+  	
