@@ -1,7 +1,7 @@
 # Windows
 ## Python
 1.
-- a. Install **Python 10.0**. Don't forget to add to the **PATH** via installing
+- a. Install **Python 10.0**. If you don't need TensorFlow, you can use the latest version of Python. Don't forget to add to the **PATH** via installing
 - b. If you have another version, install **Python 10.0**, or if you don't want to install this version of Python, please download zip version of Python and unpack it wherever you want
 2. Select **folder** for environment
 	```
@@ -13,7 +13,7 @@
 	```
 ## Nvidia
 1. Update Nvidia drivers(if needed)
- - Install CUDA v11.8 (https://developer.nvidia.com/cuda-toolkit, You need simple registration) and cudnn
+ - Install CUDA v11.8 (https://developer.nvidia.com/cuda-toolkit, you need simple registration) and cudnn
  - Or you can download from https://drive.google.com/drive/folders/1Fu93QXPQo9U9D7AIdsdyUnBEnskrFwD8?usp=drive_link
 2. Install CUDA
    - Unzip the archive
@@ -39,7 +39,7 @@
 	Disk_letter:\Your_path\gpu_env\Scripts\Activate.ps1
 	```
 2. Install requirements
-This is required versions of libraries:
+This is the required versions of libraries:
 	- torch
 	- tensorflow
 	- numpy
@@ -60,8 +60,17 @@ pip install -r Requirements.txt --extra-index-url https://download.pytorch.org/w
    	print(torch.cuda.is_available())  # → True, if GPU active
 
 # Mac (M1+)
-1. Python v10.0
-2. Create an environment
+1.
+- a. Install **Python 10.0**. If you don't need TensorFlow, you can use the latest version of Python
+- b. If you have another version, install **Python 10.0**, or if you don't want to install this version of Python, please download zip version of Python and unpack it wherever you want
+2. Select **folder** for environment
+	```
+	cd your path_to_project_folder 
+	```
+3. Create an environment
+	```
+	Disk_letter:\Your_path\Python310\python.exe -m venv gpu_env
+	```
 ## 3. PyTorch
 ### Install
 	pip install torch torchvision torchaudio
